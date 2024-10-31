@@ -1,0 +1,29 @@
+.notification-master__integrations {
+	&--header {
+		display: flex;
+		margin: 30px 0 50px 0;
+		h2 {
+			margin: 0;
+		}
+		&--actions {
+			margin-left: 20px;
+		}
+	}
+
+	&--table {
+		.notification-master__integration--actions {
+			> button {
+				margin-right: 10px;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+		&--filters {
+			margin-bottom: 20px;
+			&--selected {
+				margin-right: 20px;
+			}
+		}
+	}
+}

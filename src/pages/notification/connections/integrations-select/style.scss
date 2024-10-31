@@ -1,0 +1,25 @@
+.notification-master__integrations-select {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	&__integration {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+		border: 2px solid #eaeaea;
+		border-radius: 5px;
+		img {
+			width: 50px;
+			object-fit: cover;
+		}
+		&--selected {
+			border-color: #e67a18;
+		}
+		cursor: pointer;
+	}
+	.ant-ribbon-wrapper {
+		display: flex;
+	}
+}

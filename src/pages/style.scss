@@ -1,0 +1,56 @@
+#notification-master-admin {
+	--notification-master-color-primary: #e67a18;
+	--notification-master-color-secondary: #f6f6f6;
+	--notification-master-color-text: #6e6c6f;
+	--notification-master-color-text-light: #fff;
+	--notification-master-color-light: #fff;
+	--notification-master-color-text-dark: #312a30;
+	--notification-master-color-dark: #312a30;
+	--notification-master-heading-color: #312a30;
+	--notification-master-help-text-color: #a2a0a3;
+	--notification-master-border-color: #eaeaea;
+	margin-left: -20px;
+
+	.notification-master-page__content {
+		width: 80%;
+		margin: 0 auto;
+		padding: 20px;
+	}
+
+	font-family: "Poppins", sans-serif;
+	.notification-master__settings--loading {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+	}
+	input[type="text"],
+	input[type="email"] {
+		background: #ffffff;
+		border-width: 1px;
+		border-style: solid;
+		border-color: #d9d9d9;
+		min-height: 35px;
+		&.ant-input-lg {
+			padding: 7px 11px;
+		}
+	}
+}
+.notification-master-heading {
+	font-size: 22px;
+	font-weight: 600;
+	color: var(--notification-master-heading-color);
+	margin-bottom: 1rem;
+	display: flex;
+	align-items: center;
+	svg {
+		fill: var(--notification-master-color-primary);
+		margin-right: 10px;
+	}
+}
+
+.notification-master__back {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+}

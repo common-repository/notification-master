@@ -1,0 +1,54 @@
+{
+	"compilerOptions": {
+		"rootDir": "src",
+		"allowJs": true,
+		"checkJs": true,
+		"allowSyntheticDefaultImports": true,
+		"jsx": "react-jsx",
+		"target": "esnext",
+		"module": "esnext",
+		"lib": ["dom", "esnext"],
+		"declaration": true,
+		"declarationMap": true,
+		"composite": true,
+		"emitDeclarationOnly": true,
+		"isolatedModules": true,
+
+		/* Strict Type-Checking Options */
+		"strict": true,
+
+		/* Additional Checks */
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+
+		/* Module Resolution Options */
+		"moduleResolution": "node",
+
+		/* This needs to be false so our types are possible to consume without setting this */
+		"esModuleInterop": false,
+		"resolveJsonModule": true,
+		"noImplicitAny": false,
+		"baseUrl": "src",
+		"skipLibCheck": true,
+		"strictNullChecks": true,
+
+		"typeRoots": ["./node_modules/@types"],
+		"types": [],
+		"paths": {
+			"@Config": ["config"],
+			"@Utils": ["utils"],
+			"@Components": ["components"],
+			"@Pages": ["pages"],
+			"@Store": ["store"],
+			"@Constants": ["constants"],
+			"@Hooks": ["hooks"],
+			"@Integrations": ["integrations"],
+			"@ConnectionsStore": ["connections-store"],
+			"@Icons": ["icons"]
+		}
+	},
+	"exclude": ["**/test/**", "**/build/**", "**/build-*/**", "node_modules/"],
+	"include": ["src/**/*.ts", "src/**/*.tsx"]
+}

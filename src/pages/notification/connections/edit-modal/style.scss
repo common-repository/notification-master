@@ -1,0 +1,51 @@
+.notification-master__connections__edit-modal {
+	input[type="text"],
+	input[type="email"] {
+		background: #ffffff;
+		border-width: 1px;
+		border-style: solid;
+		border-color: #d9d9d9;
+		min-height: 35px;
+		&.ant-input-lg {
+			padding: 7px 11px;
+		}
+	}
+	&__field {
+		#react-select-2-input {
+			border: none;
+			box-shadow: none;
+			outline: 0;
+			:focus {
+				border: none;
+				box-shadow: none;
+				outline: 0;
+			}
+		}
+		input[type="text"]:focus {
+			border-color: #e67a18;
+			box-shadow: 0 0 0 2px rgba(255, 5, 22, 0.06);
+			outline: 0;
+		}
+		margin-bottom: 20px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&__title {
+			font-size: 14px !important;
+			color: var(--notification-master-text-color);
+			margin-bottom: 5px;
+			margin-top: 0;
+			&.required {
+				&::before {
+					display: inline-block;
+					content: "*";
+					color: #ff4d4f;
+					font-size: 14px;
+					line-height: 1;
+					margin-right: 4px;
+					font-family: SimSun, sans-serif;
+				}
+			}
+		}
+	}
+}

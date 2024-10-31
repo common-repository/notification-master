@@ -1,0 +1,13 @@
+.notification-master__integration--settings__field__title {
+	&.required {
+		&::before {
+			display: inline-block;
+			content: "*";
+			color: #ff4d4f;
+			font-size: 14px;
+			line-height: 1;
+			margin-right: 4px;
+			font-family: SimSun, sans-serif;
+		}
+	}
+}

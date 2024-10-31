@@ -1,0 +1,24 @@
+.notification-master__merge-tags-modal {
+	.notification-master__merge-tags-list {
+		&::-webkit-scrollbar {
+			width: 5px;
+			height: 6px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: #666;
+			border-radius: 5px;
+		}
+
+		&::-webkit-scrollbar-track {
+			background-color: #f1f1f1;
+		}
+	}
+	input[type="text"] {
+		&:focus {
+			border-color: #e67a18 !important;
+			box-shadow: 0 0 0 2px rgba(255, 5, 22, 0.06) !important;
+			outline: 0 !important;
+		}
+	}
+}
